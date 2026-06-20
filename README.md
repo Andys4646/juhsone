@@ -51,7 +51,9 @@ straight in:
 | `product-vase.jpg` | "Monolith" bud vase | a vase |
 | `product-decor.jpg` | "Strata" coasters | coasters / small object |
 | `candlelight.jpg` | featured piece banner | best hero product shot |
-| `maker.jpg` | "Atelier" portrait | you, at work |
+| `atelier.jpg` | "The Craft" band | your hands carving / working |
+| `heritage.jpg` | "Heritage" section | carved wood / a Mughal-style door |
+| `maker.jpg` | "Atelier" portrait | you at the bench (from behind is fine) |
 
 Tip: square-ish or upright photos work best for the grid. Aim for ~1500px wide.
 

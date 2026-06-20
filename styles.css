@@ -304,6 +304,27 @@ em { font-style: italic; }
 .swatches h4 { font-family: var(--serif); font-weight: 500; font-size: 1.3rem; color: var(--walnut); }
 .swatches p { font-size: .92rem; color: var(--ink-soft); margin-top: .15rem; max-width: 38ch; }
 
+/* ---------- heritage (Pakistani / Mughal woodcraft) ---------- */
+.heritage { position: relative; padding: clamp(4rem, 8vw, 6.5rem) 0 clamp(5rem, 11vw, 9rem); overflow: hidden; }
+.heritage::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23A0742F' stroke-width='1'%3E%3Crect x='18' y='18' width='20' height='20'/%3E%3Crect x='18' y='18' width='20' height='20' transform='rotate(45 28 28)'/%3E%3Ccircle cx='28' cy='28' r='3.4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 56px 56px;
+}
+.heritage__grid { position: relative; display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(2.4rem, 6vw, 6rem); align-items: center; }
+.heritage__media { border-radius: 4px; overflow: hidden; box-shadow: 0 34px 60px -34px rgba(27,21,16,.55); }
+.heritage__media img { aspect-ratio: 4/3; transition: transform 1.4s var(--ease); }
+.heritage__media:hover img { transform: scale(1.05); }
+.heritage__note { font-family: var(--script); font-size: clamp(2.1rem, 4.2vw, 3rem); color: var(--brass-deep); margin-top: 1.2rem; line-height: 1; }
+
+/* jali star ornament (Mughal motif) */
+.ornament { display: flex; align-items: center; justify-content: center; gap: 1.1rem; color: var(--brass); margin: 0 auto clamp(2.4rem, 5vw, 3.6rem); }
+.ornament__rule { height: 1px; width: clamp(46px, 12vw, 130px); background: linear-gradient(90deg, transparent, var(--brass)); }
+.ornament__rule:last-child { background: linear-gradient(90deg, var(--brass), transparent); }
+.ornament__star { width: 26px; height: 26px; flex: none; }
+
+.footer__star { width: 30px; height: 30px; color: var(--brass); margin-bottom: .9rem; display: block; }
+
 /* ---------- craft band ---------- */
 .craft { position: relative; padding: clamp(6rem, 14vw, 11rem) 0; overflow: hidden; }
 .craft__bg { position: absolute; inset: -10% 0; z-index: -2; }
@@ -415,8 +436,8 @@ em { font-style: italic; }
   .card, .card--tall, .card--wide { grid-column: span 6; }
   .card__media img, .card--tall .card__media img, .card--wide .card__media img { aspect-ratio: 4/5; }
 
-  .materials__grid, .atelier__grid { grid-template-columns: 1fr; }
-  .materials__media, .atelier__media { max-width: 520px; }
+  .materials__grid, .atelier__grid, .heritage__grid { grid-template-columns: 1fr; }
+  .materials__media, .atelier__media, .heritage__media { max-width: 520px; }
   .atelier__grid .atelier__media { order: -1; }
   .steps { grid-template-columns: 1fr; gap: 0; }
   .steps li { border-top: 1px solid var(--line-light); padding: 1.5rem 0; }
