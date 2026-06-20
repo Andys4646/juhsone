@@ -406,6 +406,7 @@ em { font-style: italic; }
 .contact__direct a { color: var(--brass); border-bottom: 1px solid transparent; transition: border-color .4s var(--ease); }
 .contact__direct a:hover { border-color: var(--brass); }
 .contact__form.is-sent { opacity: .6; pointer-events: none; }
+.contact__form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 
 /* ---------- footer ---------- */
 .footer { background: var(--espresso-2); color: var(--cream-soft); padding: clamp(3.4rem,7vw,5rem) 0 2.4rem; }

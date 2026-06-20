@@ -100,10 +100,10 @@
     toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }));
   }
 
-  /* ---- contact form (no backend — graceful mailto + thank-you) ---- */
+  /* ---- contact form (posts to /enquire.php, emails the atelier) ---- */
   const form = document.getElementById("contactForm");
   if (form) {
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", async function (e) {
       e.preventDefault();
       const name = (form.name.value || "").trim();
       const email = (form.email.value || "").trim();
@@ -112,21 +112,41 @@
         form.reportValidity && form.reportValidity();
         return;
       }
-      // open the user's mail client with a pre-filled enquiry
-      const subject = encodeURIComponent("Commission enquiry — " + name);
-      const body = encodeURIComponent(message + "\n\n— " + name + "\n" + email);
-      window.location.href = "mailto:hello@juhsone.com?subject=" + subject + "&body=" + body;
+      const btn = form.querySelector("button[type=submit]");
+      const orig = btn ? btn.textContent : "";
+      if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
 
-      // graceful in-page confirmation
-      const inner = document.createElement("p");
-      inner.className = "contact__intro";
-      inner.style.gridColumn = "1 / -1";
-      inner.innerHTML =
-        "Thank you, " + name.replace(/</g, "") +
-        ". Your mail app should open with the enquiry ready to send — " +
-        "or write to <a href='mailto:hello@juhsone.com' style='color:var(--brass)'>hello@juhsone.com</a>.";
-      form.classList.add("is-sent");
-      form.replaceChildren(inner);
+      try {
+        const res = await fetch(form.action || "/enquire.php", {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: new FormData(form),
+        });
+        const data = await res.json().catch(() => ({ ok: res.ok }));
+        if (!data.ok) throw new Error("failed");
+
+        const safe = (s) => s.replace(/[<>]/g, "");
+        const done = document.createElement("p");
+        done.className = "contact__intro";
+        done.style.gridColumn = "1 / -1";
+        done.innerHTML =
+          "Thank you, " + safe(name) + " — your enquiry is on its way. " +
+          "I'll reply to <strong>" + safe(email) + "</strong> shortly.";
+        form.classList.add("is-sent");
+        form.replaceChildren(done);
+      } catch (err) {
+        if (btn) { btn.disabled = false; btn.textContent = orig || "Send enquiry"; }
+        let note = form.querySelector(".form-error");
+        if (!note) {
+          note = document.createElement("p");
+          note.className = "form-error contact__direct";
+          note.style.gridColumn = "1 / -1";
+          form.appendChild(note);
+        }
+        note.innerHTML =
+          "Sorry — that didn't go through. Please write to " +
+          "<a href='mailto:hello@juhsone.com' style='color:var(--brass)'>hello@juhsone.com</a>.";
+      }
     });
   }
 })();
