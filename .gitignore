@@ -1,0 +1,13 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# local-only Claude settings (keep launch.json, ignore personal overrides)
+.claude/settings.local.json
+
+# scratch
+_candidates/
+_cand2/
+_preview/
+_sheet.html

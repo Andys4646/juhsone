@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juhsone — Heirloom Objects in Ash &amp; Walnut</title>
+  <meta name="description" content="Juhsone is a small atelier of handcrafted wooden objects — candle stands, vessels, tables and quiet pieces, shaped slowly from ash and walnut. Handmade in Pakistan." />
+  <meta name="theme-color" content="#1C1611" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Juhsone — Heirloom Objects in Ash & Walnut" />
+  <meta property="og:description" content="Handcrafted wooden objects, shaped slowly. Handmade in Pakistan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts: Cormorant Garamond (display serif), Jost (sans/UI), Tangerine (script accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <span class="preloader__mark">Juhsone</span>
+  </div>
+
+  <!-- Film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Juhsone — home">
+        <span class="nav__brand-mark">JUHSONE</span>
+        <span class="nav__brand-sub">atelier of wood</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#collection">Collection</a>
+        <a href="#materials">Materials</a>
+        <a href="#craft">The Craft</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#contact" class="nav__cta">Commission</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__media" data-parallax="0.18">
+        <img src="assets/hero.jpg" alt="Hand tools, a freshly planed board and curls of shavings on a dark workbench" />
+      </div>
+      <div class="hero__veil"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light reveal">Handcrafted in Pakistan · Est. 2026</p>
+        <h1 class="hero__script reveal" data-delay="1">Juhsone</h1>
+        <p class="hero__tag reveal" data-delay="2">Heirloom objects in ash &amp; walnut —<br />shaped slowly, by a single pair of hands.</p>
+        <div class="hero__actions reveal" data-delay="3">
+          <a href="#collection" class="btn btn--solid">Explore the Collection</a>
+          <a href="#craft" class="btn btn--ghost-light">The Craft</a>
+        </div>
+      </div>
+
+      <a href="#manifesto" class="hero__scroll" aria-label="Scroll down">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto" id="manifesto">
+      <div class="wrap">
+        <p class="eyebrow reveal">Our quiet belief</p>
+        <p class="manifesto__lead reveal">
+          We make a small number of objects, <em>slowly</em>. Each one begins as a rough
+          plank of ash or walnut and is shaped, scraped and oiled until it feels
+          inevitable — the kind of thing you keep for a lifetime and pass on.
+        </p>
+        <p class="manifesto__sign reveal">— Juhsone</p>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Ash</span><i>✦</i><span>Walnut</span><i>✦</i><span>Hand-carved</span><i>✦</i><span>Oil-finished</span><i>✦</i><span>Made to last</span><i>✦</i>
+        <span>Ash</span><i>✦</i><span>Walnut</span><i>✦</i><span>Hand-carved</span><i>✦</i><span>Oil-finished</span><i>✦</i><span>Made to last</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Collection -->
+    <section class="collection" id="collection">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow reveal">The Collection</p>
+          <h2 class="section-title reveal">A few things, <em>made well</em></h2>
+          <p class="section-intro reveal">
+            Every piece is one of a kind — the grain decides the rest. Prices are in
+            Pakistani Rupees; each object can be commissioned in your choice of wood.
+          </p>
+        </header>
+
+        <div class="grid">
+          <article class="card card--tall reveal">
+            <a class="card__media" href="#contact" aria-label="Enquire about Lumen candle stand">
+              <img src="assets/product-candle.jpg" alt="A turned wooden candle stand holding a lit candle on a tray" loading="lazy" />
+              <span class="card__hover">Enquire →</span>
+            </a>
+            <div class="card__row">
+              <div>
+                <h3 class="card__name">Lumen <span>candle stand</span></h3>
+                <p class="card__meta">Solid walnut · oil &amp; wax finish</p>
+              </div>
+              <p class="card__price">Rs 8,000</p>
+            </div>
+          </article>
+
+          <article class="card card--wide reveal">
+            <a class="card__media" href="#contact" aria-label="Enquire about Solace coffee table">
+              <img src="assets/product-table.jpg" alt="A low wooden coffee table with rich grain" loading="lazy" />
+              <span class="card__hover">Enquire →</span>
+            </a>
+            <div class="card__row">
+              <div>
+                <h3 class="card__name">Solace <span>coffee table</span></h3>
+                <p class="card__meta">Ash &amp; walnut · hand-jointed</p>
+              </div>
+              <p class="card__price">Rs 62,000</p>
+            </div>
+          </article>
+
+          <article class="card card--wide reveal">
+            <a class="card__media" href="#contact" aria-label="Enquire about Cupped catch-all dish">
+              <img src="assets/product-bowl-pale.jpg" alt="A shallow carved wooden dish" loading="lazy" />
+              <span class="card__hover">Enquire →</span>
+            </a>
+            <div class="card__row">
+              <div>
+                <h3 class="card__name">Cupped <span>catch-all</span></h3>
+                <p class="card__meta">Spalted ash · for keys &amp; small things</p>
+              </div>
+              <p class="card__price">Rs 6,500</p>
+            </div>
+          </article>
+
+          <article class="card card--tall reveal">
+            <a class="card__media" href="#contact" aria-label="Enquire about Eclipse lidded vessel">
+              <img src="assets/product-bowl-dark.jpg" alt="A dark walnut lidded vessel" loading="lazy" />
+              <span class="card__hover">Enquire →</span>
+            </a>
+            <div class="card__row">
+              <div>
+                <h3 class="card__name">Eclipse <span>lidded vessel</span></h3>
+                <p class="card__meta">Black walnut · turned lid</p>
+              </div>
+              <p class="card__price">Rs 9,500</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="#contact" aria-label="Enquire about Monolith bud vase">
+              <img src="assets/product-vase.jpg" alt="A slender wooden bud vase" loading="lazy" />
+              <span class="card__hover">Enquire →</span>
+            </a>
+            <div class="card__row">
+              <div>
+                <h3 class="card__name">Monolith <span>bud vase</span></h3>
+                <p class="card__meta">Walnut · glass liner</p>
+              </div>
+              <p class="card__price">Rs 7,500</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="#contact" aria-label="Enquire about Strata coaster set">
+              <img src="assets/product-decor.jpg" alt="A set of wooden coasters" loading="lazy" />
+              <span class="card__hover">Enquire →</span>
+            </a>
+            <div class="card__row">
+              <div>
+                <h3 class="card__name">Strata <span>coaster set</span></h3>
+                <p class="card__meta">Ash · set of four</p>
+              </div>
+              <p class="card__price">Rs 4,500</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials -->
+    <section class="materials" id="materials">
+      <div class="wrap materials__grid">
+        <div class="materials__media reveal">
+          <img src="assets/texture-shavings.jpg" alt="Pale curls of wood shavings resting on an old workbench" loading="lazy" />
+        </div>
+        <div class="materials__body">
+          <p class="eyebrow reveal">Materials</p>
+          <h2 class="section-title reveal">Honest wood,<br /><em>chosen by hand</em></h2>
+          <p class="section-intro reveal">
+            We work mostly in two woods, with the occasional imported timber when a
+            piece asks for it. Nothing is veneered, nothing is hidden — what you see is
+            solid all the way through.
+          </p>
+
+          <ul class="swatches reveal">
+            <li>
+              <span class="swatch swatch--ash"></span>
+              <div>
+                <h4>Ash</h4>
+                <p>Pale, springy and bright-grained — light to lift, strong to keep.</p>
+              </div>
+            </li>
+            <li>
+              <span class="swatch swatch--walnut"></span>
+              <div>
+                <h4>Walnut</h4>
+                <p>Deep chocolate tones with ribbons of figure that warm over time.</p>
+              </div>
+            </li>
+            <li>
+              <span class="swatch swatch--import"></span>
+              <div>
+                <h4>Imported timbers</h4>
+                <p>Maple, oak and rarer woods, brought in for commissions that deserve them.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craft band -->
+    <section class="craft" id="craft">
+      <div class="craft__bg" data-parallax="0.12">
+        <img src="assets/atelier.jpg" alt="A maker working a piece of wood under a warm work lamp" />
+      </div>
+      <div class="craft__veil"></div>
+      <div class="wrap craft__content">
+        <p class="eyebrow eyebrow--light reveal">The Craft</p>
+        <h2 class="section-title section-title--light reveal">From plank to <em>keepsake</em></h2>
+
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__no">01</span>
+            <h4>Select</h4>
+            <p>Boards are read for grain and figure. Only the calmest, cleanest cuts make it to the bench.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__no">02</span>
+            <h4>Shape</h4>
+            <p>Hand planes, gouges and patience. The form is coaxed out slowly, checked by eye and by hand.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__no">03</span>
+            <h4>Finish</h4>
+            <p>Sanded through the grits, then fed with natural oils and wax until the surface glows.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Featured piece -->
+    <section class="feature">
+      <div class="feature__media reveal">
+        <img src="assets/candlelight.jpg" alt="A hand plane resting on a bench with a candle glowing softly behind" loading="lazy" />
+      </div>
+      <div class="feature__panel">
+        <div class="feature__panel-inner">
+          <p class="eyebrow reveal">Piece N<sup>o</sup>·01</p>
+          <h2 class="feature__title reveal">The <em>Lumen</em> candle stand</h2>
+          <p class="feature__text reveal">
+            Turned from a single block of walnut, Lumen holds a flame at the perfect
+            height for a long evening. The base is weighted and waxed; the grain runs
+            unbroken around its curve. It is the piece we are best known for — and the
+            one we are proudest to send out into the world.
+          </p>
+          <p class="feature__price reveal">Rs 8,000 · made to order</p>
+          <a href="#contact" class="btn btn--solid reveal">Commission this piece</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atelier / the maker -->
+    <section class="atelier" id="atelier">
+      <div class="wrap atelier__grid">
+        <div class="atelier__media reveal">
+          <img src="assets/maker.jpg" alt="A maker sanding a board by a bright workshop window" loading="lazy" />
+        </div>
+        <div class="atelier__body">
+          <p class="eyebrow reveal">The Atelier</p>
+          <h2 class="section-title reveal">One maker,<br /><em>one bench</em></h2>
+          <p class="section-intro reveal">
+            Juhsone began with a simple urge — to make things by hand and make them
+            beautifully. Every object is drawn, cut, shaped and finished by one person,
+            in one small workshop. There is no production line. There is only the wood,
+            the tools, and the time it takes to do it right.
+          </p>
+          <p class="section-intro reveal">
+            If you would like something made for your home, I would love to hear what
+            you have in mind.
+          </p>
+          <p class="atelier__signoff reveal">Juhsone</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Commission -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact__head">
+          <p class="eyebrow eyebrow--light reveal">Commission &amp; Enquiries</p>
+          <h2 class="contact__title reveal">Let's make<br /><em>something lasting</em></h2>
+          <p class="contact__intro reveal">
+            Tell me about the piece you have in mind — a candle stand, a table, a
+            gift — and I'll reply with options, timing and a price.
+          </p>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field field--full">
+            <label for="message">What would you like made?</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="field field--full contact__submit">
+            <button type="submit" class="btn btn--solid">Send enquiry</button>
+            <p class="contact__direct">
+              or write directly —
+              <a href="mailto:hello@juhsone.com">hello@juhsone.com</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="footer__mark">Juhsone</span>
+        <p>Heirloom objects in ash &amp; walnut. Handmade, one at a time, in Pakistan.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#collection">Collection</a>
+        <a href="#materials">Materials</a>
+        <a href="#craft">The Craft</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#contact">Commission</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+        <a href="mailto:hello@juhsone.com">Email</a>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <p>© <span id="year">2026</span> Juhsone. All pieces handmade.</p>
+      <p>Crafted with care.</p>
+    </div>
+  </footer>
+
+  <button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
