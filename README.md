@@ -49,6 +49,10 @@ straight in:
 | `product-bowl-pale.jpg` | "Cupped" catch-all | a shallow dish |
 | `product-bowl-dark.jpg` | "Eclipse" lidded vessel | a dark vessel |
 | `product-vase.jpg` | "Monolith" bud vase | a vase |
+| `product-rocking-chair.jpg` | "Cadence" rocking chair | your rocking chair |
+| `product-table-live-edge.jpg` | "Meridian" live-edge coffee table | a statement table, close-up works well |
+| `product-desk.jpg` | "Scribe" writing desk | your desk / workstation |
+| `product-ottoman.jpg` | "Plinth" ottoman | an ottoman or stool |
 | `product-decor.jpg` | "Strata" coasters | coasters / small object |
 | `candlelight.jpg` | featured piece banner | best hero product shot |
 | `atelier.jpg` | "The Craft" band | your hands carving / working |

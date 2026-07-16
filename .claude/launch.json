@@ -4,8 +4,8 @@
     {
       "name": "juhsone",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4321"],
-      "port": 4321
+      "runtimeArgs": ["-m", "http.server", "8317"],
+      "port": 8317
     }
   ]
 }
