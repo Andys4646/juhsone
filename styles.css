@@ -240,6 +240,7 @@ em { font-style: italic; }
 
 /* ---------- manifesto ---------- */
 .manifesto { padding: clamp(6rem, 13vw, 11rem) 0; text-align: center; }
+.manifesto .eyebrow { font-size: 1.44rem; }
 .manifesto .wrap { max-width: 1020px; }
 .manifesto__lead {
   font-family: var(--serif); font-weight: 300;
